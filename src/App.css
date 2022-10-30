@@ -1,0 +1,280 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Poppins';
+}
+
+.navMain{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navMain h2{
+  font-weight: 600;
+  font-size:21px
+}
+
+.navMain ul{
+  display: flex;
+  list-style-type: none;
+}
+
+.navMain ul li{
+  margin-left: 15px;
+
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img{
+  width:50px;
+  margin-right: 12px;
+}
+
+.navLinks a{
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+
+input{
+  outline: none;
+  border: none;
+  width: 270px;
+  height: 35px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.fInput{
+  border: 1px solid rgb(177, 173, 173);
+  border-radius: 8px;
+  height: 40px;
+  width: 330px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bodie{
+  height:90vh;
+  width:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainText{
+  margin-bottom: 50px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.image{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+}
+
+.image img{
+  width: 100%;
+}
+
+.lessText{
+  margin-bottom: 40px;
+}
+
+.lessText p{
+  font-size: 19px;
+  font-weight: 600;
+  word-spacing: 5px;
+  letter-spacing: 2px;
+}
+
+.mainText a{
+  color:#4aa9e9;
+  font-size: 17px;
+  font-weight: bold;
+  word-spacing: 3px;
+  text-decoration: none;
+}
+
+h1{
+  white-space: nowrap;
+  font-size: 60px;
+}
+
+.btn{
+  margin-bottom: 50px;
+  display: flex;
+  gap: 23px;
+}
+
+
+.btn button{
+  width: 180px;
+  border-radius: 2px;
+  height: 60px;
+}
+
+button:hover{
+  cursor: pointer;
+}
+
+.explore{
+  background: #4aa9e9;
+  color: white;
+  border: none;
+}
+
+.create{
+  color:#4aa9e9;
+  border:1px solid #4aa9e9 ;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.hamburger{
+  display: none;
+}
+
+.mobileNav{
+  display: none;
+}
+
+@media only screen and (max-width: 1800px){
+
+  h1{
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 1400px){
+
+  .fInput{
+    display: none;
+  }
+  .hamburger{
+    z-index: 20;
+    display: block;
+  }
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  .full{
+    display: none;
+  }
+  .image{
+    display: none;
+  }
+  .mainText{
+    width: 40%;
+  }
+  h1{
+    font-size: 32px;
+  }
+  .lessText p{
+    font-size: 17px;
+    word-spacing: 2px;
+  }
+  .navMain{
+    position: relative;
+  }
+  .mobileNav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    position: absolute;
+    color: black;
+    margin-top: 20px;
+  }
+  .mobileNav ul{
+    margin-top: 200px;
+    height: 190px;
+    width: 80%;
+    gap: 15px;
+    background-color: rgb(231, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobileNav ul li a{
+    text-decoration: none;
+    color:#4aa9e9;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (max-width: 800px){
+  .fInput{
+    display: none;
+  }
+  .hamburger{
+    z-index: 20;
+    display: block;
+  }
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  .full{
+    display: none;
+  }
+  .image{
+    display: none;
+  }
+  .boldie{
+    width: 100%;
+  }
+  .mainText{
+    width: 80%;
+  }
+  h1{
+    font-size: 32px;
+  }
+  .lessText p{
+    font-size: 17px;
+    word-spacing: 2px;
+  }
+  .navMain{
+    position: relative;
+  }
+  .mobileNav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: white;
+    position: absolute;
+    color: black;
+    margin-top: 20px;
+  }
+  .mobileNav ul{
+    margin-top: 200px;
+    height: 190px;
+    width: 80%;
+    gap: 15px;
+    background-color: rgb(231, 236, 236);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .mobileNav ul li a{
+    text-decoration: none;
+    color:#4aa9e9;
+    font-weight: bold;
+  }
+}
